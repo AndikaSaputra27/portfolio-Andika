@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Andika — Junior Full Stack Developer yang beralih dari koordinator LSM. Spesialisasi HTML, CSS, JavaScript, dan web development." />
+  <meta property="og:title" content="Andika — Full Stack Developer" />
+  <meta property="og:description" content="Dari koordinator komunitas ke developer. Membangun dengan empati, logika, dan kode." />
+  <meta property="og:type" content="website" />
+  <title>Andika — Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Andika<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#experience" class="nav-link">Pengalaman</a>
+        <a href="#projects" class="nav-link">Proyek</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+      <a href="cv-andika.pdf" download class="btn btn-primary btn-sm nav-cta">
+        Unduh CV
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#about" class="mobile-link">Tentang</a>
+      <a href="#experience" class="mobile-link">Pengalaman</a>
+      <a href="#projects" class="mobile-link">Proyek</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#contact" class="mobile-link">Kontak</a>
+      <a href="cv-andika.pdf" download class="btn btn-primary mobile-cv-btn">Unduh CV</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="grid-pattern"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-text">
+          <p class="hero-greeting animate-fade-up">👋 Halo, saya</p>
+          <h1 class="hero-name animate-fade-up delay-1">Andika</h1>
+          <div class="hero-title animate-fade-up delay-2">
+            <span class="title-prefix">Seorang </span>
+            <span class="typewriter" id="typewriter"></span>
+            <span class="cursor">|</span>
+          </div>
+          <p class="hero-desc animate-fade-up delay-3">
+            Dari koordinator komunitas ke developer.<br />
+            Membangun dengan <span class="highlight">empati</span>, <span class="highlight">logika</span>, dan kode.
+          </p>
+          <div class="hero-actions animate-fade-up delay-4">
+            <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+            <a href="cv-andika.pdf" download class="btn btn-outline">Unduh CV</a>
+          </div>
+        </div>
+        <div class="hero-image animate-fade-left delay-2">
+          <div class="profile-frame">
+            <div class="profile-placeholder">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="50" cy="35" r="20" fill="#38BDF8" opacity="0.3"/>
+                <ellipse cx="50" cy="80" rx="30" ry="20" fill="#38BDF8" opacity="0.3"/>
+              </svg>
+              <p>Foto Profil</p>
+            </div>
+            <!-- Ganti dengan: <img src="images/profile.jpg" alt="Foto profil Andika" /> -->
+          </div>
+          <div class="profile-badge badge-1">Full Stack Dev</div>
+          <div class="profile-badge badge-2">Open to Work ✅</div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-label="Scroll ke bawah">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-title animate-on-scroll">
+          <h2>Tentang Saya</h2>
+          <div class="title-line"></div>
+          <p class="section-subtitle">Perjalanan dari lapangan ke layar</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text animate-on-scroll">
+            <p>
+              Perjalanan saya dimulai bukan dari ruang kelas coding, melainkan dari lapangan — berhadapan langsung dengan masyarakat, mendokumentasikan kisah mereka, dan mengkoordinasikan gerakan yang nyata. Selama magang di LSM, saya belajar bahwa <strong>komunikasi yang baik dan pemahaman mendalam terhadap kebutuhan orang lain</strong> adalah pondasi dari segala sesuatu.
+            </p>
+            <p>
+              Di titik itulah saya menyadari: skill-skill yang saya bangun di dunia nyata — riset, analisis, koordinasi, dan dokumentasi — adalah fondasi yang sama yang dibutuhkan seorang developer yang baik. Saya bukan hanya belajar menulis kode, saya belajar membangun <strong>solusi yang berpusat pada manusia</strong>.
+            </p>
+            <p>
+              Sekarang saya sedang dalam perjalanan penuh menuju Full Stack Development, dengan semangat yang sama yang dulu saya bawa ke setiap rapat warga dan diskusi komunitas.
+            </p>
+          </div>
+          <div class="about-skills animate-on-scroll delay-1">
+            <h3>Transferable Skills</h3>
+            <div class="skill-tags">
+              <div class="skill-tag">
+                <span class="skill-icon">📋</span>
+                <div>
+                  <strong>Dokumentasi</strong>
+                  <p>Notulensi & pelaporan presisi</p>
+                </div>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">🤝</span>
+                <div>
+                  <strong>Koordinasi</strong>
+                  <p>Kolaborasi multi-pihak</p>
+                </div>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">🔍</span>
+                <div>
+                  <strong>Riset</strong>
+                  <p>Analisis data & informasi</p>
+                </div>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">📢</span>
+                <div>
+                  <strong>Komunikasi</strong>
+                  <p>Penyampaian ide yang jelas</p>
+                </div>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">⚡</span>
+                <div>
+                  <strong>Adaptasi</strong>
+                  <p>Belajar cepat di lingkungan baru</p>
+                </div>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">🎯</span>
+                <div>
+                  <strong>Problem Solving</strong>
+                  <p>Solusi berbasis kebutuhan nyata</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-title animate-on-scroll">
+          <h2>Pengalaman</h2>
+          <div class="title-line"></div>
+          <p class="section-subtitle">Perjalanan profesional sebelum terjun ke dunia tech</p>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <h3>Magang — LSM (Lembaga Swadaya Masyarakat)</h3>
+                <span class="timeline-badge">3 Bulan</span>
+              </div>
+              <div class="timeline-roles">
+
+                <div class="role-item">
+                  <h4>🗣️ Konsolidasi ke Masyarakat</h4>
+                  <p>Melakukan pendekatan dan konsolidasi langsung ke komunitas warga untuk memetakan kebutuhan dan membangun kepercayaan. Melatih kemampuan active listening dan user empathy — skill krusial dalam UX dan pengembangan produk.</p>
+                  <div class="role-tags">
+                    <span class="tag">Komunikasi</span>
+                    <span class="tag">Empati</span>
+                    <span class="tag">User Research</span>
+                  </div>
+                </div>
+
+                <div class="role-item">
+                  <h4>📝 Notulensi Event Organisasi</h4>
+                  <p>Mendokumentasikan jalannya berbagai event dan pertemuan organisasi secara akurat dan terstruktur. Membangun kebiasaan dokumentasi yang detail dan sistematis — fundamental dalam penulisan kode dan technical writing.</p>
+                  <div class="role-tags">
+                    <span class="tag">Dokumentasi</span>
+                    <span class="tag">Detail-Oriented</span>
+                    <span class="tag">Technical Writing</span>
+                  </div>
+                </div>
+
+                <div class="role-item">
+                  <h4>⚖️ Panitia Lokal — Sekolah Pendamping Hukum Rakyat</h4>
+                  <p>Menjadi panitia lokal untuk program pendidikan hukum berbasis komunitas. Mengelola koordinasi antar peserta, narasumber, dan pihak terkait — melatih project management dan kemampuan berkolaborasi dalam tim.</p>
+                  <div class="role-tags">
+                    <span class="tag">Project Management</span>
+                    <span class="tag">Koordinasi</span>
+                    <span class="tag">Teamwork</span>
+                  </div>
+                </div>
+
+                <div class="role-item">
+                  <h4>🌿 Konsolidasi Hutan Adat & Pameran Besar</h4>
+                  <p>Mempelajari dan berkontribusi pada proses konsolidasi isu hutan adat, kemudian membantu mempersiapkan pameran besar sebagai platform penyampaian informasi publik. Pengalaman ini melatih kemampuan riset mendalam, penyusunan konten, dan presentasi data yang kompleks ke audiens luas.</p>
+                  <div class="role-tags">
+                    <span class="tag">Riset</span>
+                    <span class="tag">Manajemen Konten</span>
+                    <span class="tag">Public Communication</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-title animate-on-scroll">
+          <h2>Proyek</h2>
+          <div class="title-line"></div>
+          <p class="section-subtitle">Yang saya bangun selama belajar</p>
+        </div>
+
+        <div class="project-filters animate-on-scroll">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <div class="project-card animate-on-scroll" data-category="fullstack">
+            <div class="project-img">
+              <div class="project-img-placeholder">
+                <span>🌐</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>Website portfolio personal yang dibangun dari nol menggunakan HTML, CSS, dan JavaScript murni. Menampilkan perjalanan career switch dan proyek-proyek yang dikerjakan.</p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="Lihat kode sumber Portfolio di GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link project-link-demo" aria-label="Lihat demo live Portfolio">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll delay-1" data-category="frontend">
+            <div class="project-img">
+              <div class="project-img-placeholder">
+                <span>🛒</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Landing Page Toko Online</h3>
+              <p>Landing page modern untuk toko online fiktif dengan tampilan produk, keranjang sederhana, dan desain responsif mobile-first.</p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="Lihat kode sumber Landing Page di GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link project-link-demo" aria-label="Lihat demo live Landing Page">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card animate-on-scroll delay-2" data-category="fullstack">
+            <div class="project-img">
+              <div class="project-img-placeholder">
+                <span>✅</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Aplikasi To-Do List</h3>
+              <p>Aplikasi manajemen tugas dengan fitur tambah, edit, hapus, dan filter status. Data tersimpan di localStorage agar tidak hilang saat refresh.</p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML5</span>
+                <span class="tech-badge">CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">LocalStorage</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="Lihat kode sumber To-Do List di GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <a href="#" class="project-link project-link-demo" aria-label="Lihat demo live To-Do List">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-title animate-on-scroll">
+          <h2>Skills</h2>
+          <div class="title-line"></div>
+          <p class="section-subtitle">Teknologi yang sedang saya kuasai</p>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skills-group animate-on-scroll">
+            <h3 class="skills-group-title">
+              <span class="group-icon">🎨</span> Frontend
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level">Menengah</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-level">Menengah</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level">Pemula</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-level">Menengah</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group animate-on-scroll delay-1">
+            <h3 class="skills-group-title">
+              <span class="group-icon">⚙️</span> Backend & Tools
+            </h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-level">Pemula</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Node.js</span>
+                  <span class="skill-level">Belajar</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="30"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-level">Menengah</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Figma (Dasar)</span>
+                  <span class="skill-level">Pemula</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group animate-on-scroll delay-2">
+            <h3 class="skills-group-title">
+              <span class="group-icon">🧠</span> Sedang Dipelajari
+            </h3>
+            <div class="learning-badges">
+              <span class="learning-badge">React.js</span>
+              <span class="learning-badge">Next.js</span>
+              <span class="learning-badge">TypeScript</span>
+              <span class="learning-badge">Tailwind CSS</span>
+              <span class="learning-badge">SQL / PostgreSQL</span>
+              <span class="learning-badge">REST API</span>
+              <span class="learning-badge">Express.js</span>
+            </div>
+            <p class="learning-note">📚 Aktif belajar setiap hari melalui proyek nyata dan dokumentasi resmi.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-title animate-on-scroll">
+          <h2>Mari Berkolaborasi</h2>
+          <div class="title-line"></div>
+          <p class="section-subtitle">Terbuka untuk peluang kerja, magang, atau sekadar ngobrol</p>
+        </div>
+        <div class="contact-grid">
+
+          <div class="contact-info animate-on-scroll">
+            <h3>Hubungi Saya</h3>
+            <p>Saya sedang aktif mencari kesempatan sebagai <strong>Junior Full Stack Developer</strong>. Jika Anda punya peluang menarik atau sekadar ingin berdiskusi tentang tech, jangan ragu untuk menghubungi saya.</p>
+
+            <div class="contact-links">
+              <a href="mailto:dika4310@gmail.com" class="contact-link" aria-label="Kirim email ke Andika">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <strong>Email</strong>
+                  <p>dika4310@gmail.com</p>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/andika" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Lihat profil LinkedIn Andika">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <p>linkedin.com/in/andika</p>
+                </div>
+              </a>
+              <a href="https://github.com/AndikaSaputra27" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Lihat profil GitHub Andika">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div>
+                  <strong>GitHub</strong>
+                  <p>github.com/AndikaSaputra27</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap animate-on-scroll delay-1">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Nama Anda" autocomplete="name" required />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@contoh.com" autocomplete="email" required />
+                <span class="form-error" id="emailError"></span>
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                <span class="btn-text">Kirim Pesan</span>
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+            <div class="form-toast" id="formToast" role="alert" aria-live="polite"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-copy">
+        &copy; 2024 <strong>Andika</strong>. Dibangun dengan ❤️ menggunakan HTML, CSS & JavaScript.
+      </p>
+      <div class="footer-links">
+        <a href="https://github.com/AndikaSaputra27" target="_blank" rel="noopener noreferrer" aria-label="GitHub Andika">GitHub</a>
+        <a href="https://linkedin.com/in/andika" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Andika">LinkedIn</a>
+        <a href="mailto:dika4310@gmail.com" aria-label="Email Andika">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

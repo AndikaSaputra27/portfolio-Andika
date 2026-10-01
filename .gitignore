@@ -1,0 +1,11 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.suo
+*.user
+
+# Kiro spec files (opsional, hapus baris ini kalau mau ikut diupload)
+.kiro/
